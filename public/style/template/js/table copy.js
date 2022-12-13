@@ -1,5 +1,5 @@
 // async function fetchText() {
-//     let response = await fetch('http://compute.dinus.ac.id:900/api/get/ssensor');
+//     let response = await fetch('http://103.30.1.54:900/api/get/ssensor');
 
 //     console.log(response.status); // 200
 //     console.log(response.statusText); // OK
@@ -13,7 +13,7 @@
 // fetchText();
 
 // async function getData() {
-//     let url = 'http://compute.dinus.ac.id:900/api/get/ssensor';
+//     let url = 'http://103.30.1.54:900/api/get/ssensor';
 //     try {
 //         let res = await fetch(url);
 //         return await res.json();
@@ -47,7 +47,7 @@
 // main.js...
 
 // 1. GET request using fetch()
-fetch("http://compute.dinus.ac.id:900/api/get/ssensor")
+fetch("http://103.30.1.54:900/api/get/ssensor")
   // Converting received data to JSON
   .then((response) => response.json())
   .then((json) => {
@@ -81,7 +81,7 @@ fetch("http://compute.dinus.ac.id:900/api/get/ssensor")
 // main.js
 
 // 5. POST request using fetch()
-fetch("http://compute.dinus.ac.id:900/api/get/ssensor", {
+fetch("http://103.30.1.54:900/api/get/ssensor", {
   // 6. Adding method type
   method: "POST",
 

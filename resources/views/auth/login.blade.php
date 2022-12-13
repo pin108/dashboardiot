@@ -2,7 +2,7 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                <img src="{{ asset('style/template/images/logoudinus.png') }}" class="w-20 h-20 fill-current text-gray-500" />
             </a>
         </x-slot>
 
@@ -51,5 +51,10 @@
                 </x-primary-button>
             </div>
         </form>
+        <x-primary-button class="ml-3">
+            <a href={{ url('/register')}}>register</a>
+        </x-primary-button>
     </x-auth-card>
 </x-guest-layout>
+
+

@@ -71,7 +71,7 @@
                                 d="M7 7a7 7 0 1 1 7.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A7 7 0 0 1 7 3.999z"></path>
                         </svg></div>
                     <div class="px-2">
-                        <h5 class="mb-0 mt-1"><a href="/menu/daerah/kirim?id=507">Kendal-7</a></h5>
+                        <h5 class="mb-0 mt-1"><a href="/menu/daerah/kirim?id=504">Kendal-4</a></h5>
                     </div>
                 </div>
             </div>
