@@ -53,7 +53,7 @@ crossorigin=""></script>
         
         
         $( document ).ready(function(){
-        $.getJSON('http://103.30.1.54:900/api/get/peta', function(data) {
+        $.getJSON('http://compute.dinus.ac.id:900/api/get/peta', function(data) {
         $.each(data, function(index) {
         L.marker([parseFloat(data[index].latitude), parseFloat(data[index].longitude)])
                 .bindPopup(data[index].nama_iot)

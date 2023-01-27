@@ -10,7 +10,7 @@ class reportiotclient extends Controller
 {
     //  public function table(){
 
-    //     $response = Http::get('http://103.30.1.54:900/api/get/ssensor');
+    //     $response = Http::get('http://compute.dinus.ac.id:900/api/get/ssensor');
     //     $data = json_decode($response, True);
     //     $datatable = view('main', compact('data'));
     //     return $datatable;
@@ -28,8 +28,8 @@ class reportiotclient extends Controller
         $titik = request('id');
 
 
-        $url = "http://103.30.1.54:900/api/get/dataiot/" .$titik;
-        // $url = 'http://103.30.1.54:900/api/get/reportiotssawah/3';
+        $url = "http://compute.dinus.ac.id:900/api/get/dataiot/" .$titik;
+        // $url = 'http://compute.dinus.ac.id:900/api/get/reportiotssawah/3';
         $response = Http::get($url);
         $data = json_decode($response, true);
         if ($data == null) {

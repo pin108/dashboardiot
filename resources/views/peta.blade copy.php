@@ -63,7 +63,7 @@ L.tileLayer('https://maps.google.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}
 }).addTo(mymap);
 
 $( document ).ready(function(){
-    $.getJSON('http://103.30.1.54:900/api/get/location', function(data) {
+    $.getJSON('http://compute.dinus.ac.id:900/api/get/location', function(data) {
     $.each(data, function(index) {
     L.marker([parseFloat(data[index].lokasi_latitude), parseFloat(data[index].lokasi_longitude)])
             .bindPopup(data[index].kabupaten)

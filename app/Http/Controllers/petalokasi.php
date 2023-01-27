@@ -36,7 +36,7 @@ class petalokasi extends Controller
      */
     public function show()
     {
-        $url = "http://103.30.1.54:900/api/get/ssensor";
+        $url = "http://compute.dinus.ac.id:900/api/get/ssensor";
         $response = Http::get($url);
         $data = json_decode($response, true);
         $sswahpage = view(' peta',compact('data'));

@@ -296,7 +296,7 @@ crossorigin=""></script>
                             <div class="card">
                                 <div class="card-body">
                                     <p class="card-title">Peta</p>
-                                    <center><div id="map"></div></center>
+                                   <div id="map"></div>
                                 </div>
                             </div>
                         </div>
@@ -307,9 +307,9 @@ crossorigin=""></script>
                                         <p class="card-title">Download Datasheet</p>
                                     </div>
                                     <p class="font-weight-500">Total Jumlah DataSheet Saat Ini Adalah : </p>
-                                    <a href="http://103.30.1.54:900/api/tabel/export"><button type="button"
-                                            class="btn btn-primary">Download Data</button></a>
-
+                                    <a href="http://compute.dinus.ac.id:900/api/tabel/export"><button type="button"
+                                            class="btn btn-primary">Download Data</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -332,11 +332,11 @@ crossorigin=""></script>
         <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
-    <script>
+    {{-- <script>
         $(document).ready(function() {
             $('#table').DataTable();
         });
-    </script>
+    </script> --}}
     <script>                            //coordinate lokasi
         var mymap = L.map('map').setView([-2.901303329199493, 110.01037334296285], 5);
         
@@ -353,7 +353,7 @@ crossorigin=""></script>
         
         
         $( document ).ready(function(){
-        $.getJSON('http://103.30.1.54:900/api/get/peta', function(data) {
+        $.getJSON('http://compute.dinus.ac.id:900/api/get/peta', function(data) {
         $.each(data, function(index) {
         L.marker([parseFloat(data[index].latitude), parseFloat(data[index].longitude)])
                 .bindPopup(data[index].nama_iot)
